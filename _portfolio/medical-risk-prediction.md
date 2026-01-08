@@ -21,6 +21,7 @@ tech_stack:
 - name: Scikit-learn
 - name: Matplotlib
 - name: Seaborn
+layout: "default"
 ---
 
 ## 项目背景
@@ -54,3 +55,4 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 
 X_test_scaled = scaler.transform(X_test)
+
