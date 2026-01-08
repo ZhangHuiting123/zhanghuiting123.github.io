@@ -1,3 +1,4 @@
+---
 title: "医疗数据住院死亡风险预测分析"
 collection: portfolio
 type: "Data Analysis"
@@ -51,4 +52,5 @@ X_train, X_test, y_train, y_test = train_test_split(
 # 特征标准化
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
+
 X_test_scaled = scaler.transform(X_test)
