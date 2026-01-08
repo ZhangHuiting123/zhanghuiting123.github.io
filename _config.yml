@@ -1,7 +1,7 @@
 title: 医疗数据分析作业作品集
 description: 住院死亡风险预测分析项目展示
 baseurl: ""
-url: "http://localhost:4000"
+url: "http://ZhangHuiting123.github.io"
 markdown: kramdown
 permalink: /:title/
 collections:
@@ -13,4 +13,5 @@ defaults:
       path: ""
       type: portfolio
     values:
+
       layout: "portfolio"
