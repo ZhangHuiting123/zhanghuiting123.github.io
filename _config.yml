@@ -23,14 +23,14 @@ repository               : "ZhangHuiting123.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "../images/XX.png"
-  name             : "Huiting Zhang"
+  avatar           : "/images/zhengjianzhao.png"
+  name             : "Huiting Zhang(张惠婷）"
   pronouns         : # example: "she/her"  
   bio              : "Peking University"
   location         : "Beijing, China"
   employer         : 
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "2528934614@qq.com" 
 
   # Academic websites
   academia         : # URL
@@ -356,3 +356,4 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
