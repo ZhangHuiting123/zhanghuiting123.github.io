@@ -40,7 +40,10 @@ df_clean[lab_cols] = imputer.fit_transform(df_clean[lab_cols])
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
+```
 
+### 2. 模型构建与评估
+```python
 # 逻辑回归模型（平衡类别权重）
 lr_model = LogisticRegression(random_state=42, max_iter=1000, class_weight='balanced')
 lr_model.fit(X_train_scaled, y_train)
@@ -55,7 +58,7 @@ def evaluate_model(y_true, y_pred, y_pred_proba, model_name):
     recall = recall_score(y_true, y_pred)
     roc_auc = roc_auc_score(y_true, y_pred_proba)
     return {'accuracy': accuracy, 'recall': recall, 'roc_auc': roc_auc}
-
+```
 
 ## 结果分析
 ### 1. 基础统计特征
@@ -81,3 +84,4 @@ def evaluate_model(y_true, y_pred, y_pred_proba, model_name):
 **分析结论**：
  - 前三大影响因素为lab_5237_min（pH值）、lab_5257_min（乳酸）和age_month（年龄），累计贡献超60%；
  - 临床可优先关注这三个指标，简化风险评估流程。
+
